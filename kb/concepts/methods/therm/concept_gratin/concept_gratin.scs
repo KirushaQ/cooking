@@ -1,0 +1,38 @@
+active_action -> concept_gratin;;
+concept_gratin <- concept_physical_cooking_method;;
+concept_gratin => nrel_main_idtf:
+	[гратинирование](* <- lang_ru;;*);
+	[gratin](* <- lang_en;; *);;
+concept_gratin<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(Гратинирование)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Гратинирование — приём кулинарной обработки, целью которого является улучшение вкусовых свойств блюда, получение приятного внешнего вида.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_gratin <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_gratin.png";;
+		*);;
+	*);;
+	concept_gratin <- rrel_key_sc_element:
+	  ...
+	  (*
+	  =>nrel_main_idtf:[Утв.(гратинирование,герметизация)](*<-lang_ru;;*);;
+	  <-sc_statement;;
+	  <= nrel_sc_text_translation: ...
+	    (*
+	    -> rrel_example:
+	    [ Гратинирование иногда применяется для обеспечения определённой герметизации блюда.](*<-lang_ru;;*);;
+	    *);;
+	  *);;

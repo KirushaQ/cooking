@@ -1,0 +1,38 @@
+active_action -> concept_cooling;;
+concept_cooling <- concept_physical_cooking_method;;
+concept_cooling => nrel_main_idtf:
+	[охлаждение](* <- lang_ru;;*);
+	[cooling](* <- lang_en;; *);;
+concept_cooling<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(Охлаждение)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Охлаждение — метод обработки пищи,который применяется для временного хранения продуктов.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_cooling <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_cooling.png";;
+		*);;
+	*);;
+	concept_cooling <- rrel_key_sc_element:
+	  ...
+	  (*
+	  =>nrel_main_idtf:[Утв.(Охлаждение,холодное блюдо,квашение)](*<-lang_ru;;*);;
+	  <-sc_statement;;
+	  <= nrel_sc_text_translation: ...
+	    (*
+	    -> rrel_example:
+	    [Охлаждение также используется для приостановления процессов квашения (брожения), для приготовления специфических холодных блюд (холодец, заливное (блюдо), желе) .](*<-lang_ru;;*);;
+	    *);;
+	  *);;

@@ -1,0 +1,15 @@
+concept_morning <-sc_node_not_relation;;
+concept_morning => nrel_main_idtf:
+	[утро](* <- lang_ru;; *);
+	[morning](* <- lang_en;; *);;
+concept_afternoon <-sc_node_not_relation;;
+concept_afternoon => nrel_main_idtf:
+	[день](* <- lang_ru;; *);
+	[afternoon](* <- lang_en;; *);;
+concept_night <-sc_node_not_relation;;
+concept_night => nrel_main_idtf:
+	[вечер](* <- lang_ru;; *);
+	[night](* <- lang_en;; *);;
+
+
+

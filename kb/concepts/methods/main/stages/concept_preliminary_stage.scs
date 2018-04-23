@@ -1,0 +1,17 @@
+active_action -> concept_preliminary_stage;;
+concept_preliminary_stage <- concept_stage;;
+concept_preliminary_stage => nrel_main_idtf:
+	[предварительный этап](* <- lang_ru;; *);
+	[preliminary stage](* <- lang_en;; *);;
+concept_preliminary_stage<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(предварительный этап)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Предварительная этап — это тот этап обработки продукта, на котором удаляются несъедобные части.](*<-lang_ru;;*);;
+*);;
+*);;

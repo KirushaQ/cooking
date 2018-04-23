@@ -1,0 +1,30 @@
+subject_domain_of_thermal_cooking_methods
+=> nrel_main_idtf:
+    [Предметная область термических методов приготовления пищи]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [Subject domain of thermal cooking methods]
+    (* <- lang_en;; *);;
+sc_node_struct -> subject_domain_of_thermal_cooking_methods;;
+subject_domain_of_thermal_cooking_methods-> rrel_maximum_studied_object_class:
+concept_baking;
+concept_filtering;
+concept_grilling;
+concept_blanching ;
+concept_filtering_liquid;
+concept_melting;
+concept_boiling;
+concept_filtering_solid;
+concept_passering;
+concept_calcination;
+concept_flambeauing;
+concept_quenching;
+concept_freezing;
+concept_smoking;
+concept_confit;
+concept_frying;
+concept_steaming;
+concept_cooling ;
+concept_gratin;;
+
+subject_domain_of_thermal_cooking_methods <- subject_domain;;

@@ -1,0 +1,40 @@
+active_action -> concept_passering;;
+concept_passering <- concept_physical_cooking_method;;
+concept_passering => nrel_main_idtf:
+	[пассерование](* <- lang_ru;;*);
+	[passering](* <- lang_en;; *);;
+	concept_passering => nrel_idtf:
+		[пассеровка](* <- lang_ru;;*);;
+concept_passering<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(Пассерование)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Пассерование — обжаривание в жиру овощей при температуре 120 °C с экстракцией жиром красящих и ароматических веществ.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_passering <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_passering.png";;
+		*);;
+	*);;
+	concept_passering <- rrel_key_sc_element:
+	  ...
+	  (*
+	  =>nrel_main_idtf:[Утв.(пассерование)](*<-lang_ru;;*);;
+	  <-sc_statement;;
+	  <= nrel_sc_text_translation: ...
+	    (*
+	    -> rrel_example:
+	    [Пассерование проводится до размягчения и последующего пропускания их через что-нибудь для получения однородной массы, которая добавляется в супы, соусы и начинки.](*<-lang_ru;;*);;
+	    *);;
+	  *);;

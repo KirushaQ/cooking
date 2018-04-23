@@ -1,0 +1,27 @@
+active_action -> concept_baking;;
+concept_baking <- concept_physical_cooking_method;;
+concept_baking => nrel_main_idtf:
+	[выпекание](* <- lang_ru;;*);
+	[baking](* <- lang_en;; *);;
+concept_baking<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(выпекание)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Выпекание — метод длительного приготовления пищи под действием сухого тепла, вызванного тепловой конвекцией.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_baking <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_baking.png";;
+		*);;
+	*);;

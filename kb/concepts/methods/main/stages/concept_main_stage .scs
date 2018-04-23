@@ -1,0 +1,31 @@
+active_action -> concept_main_stage;;
+concept_main_stage <- concept_stage;;
+concept_main_stage => nrel_main_idtf:
+	[основной этап](* <- lang_ru;; *);
+	[main stage](* <- lang_en;; *);;
+concept_main_stage<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(основной этап)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Основной этап — это тот этап обработки продукта, после которого продукт становится самостоятельным блюдом, готовым к употреблению.](*<-lang_ru;;*);;
+*);;
+*);;
+
+
+concept_main_stage<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Утв.(основной этап)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Окончанием основной обработки продукта следует считать окончание приготовления задуманного блюда.](*<-lang_ru;;*);;
+*);;
+*);;

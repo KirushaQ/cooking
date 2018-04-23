@@ -1,0 +1,38 @@
+active_action -> concept_quenching;;
+concept_quenching <- concept_physical_cooking_method;;
+concept_quenching => nrel_main_idtf:
+	[тушение](* <- lang_ru;;*);
+	[quenching](* <- lang_en;; *);;
+concept_quenching<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(Тушение)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Тушение — процесс готовки посредством нагревания продуктов в малом количестве жидкости.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_quenching <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_quenching.png";;
+		*);;
+	*);;
+	concept_quenching <- rrel_key_sc_element:
+	  ...
+	  (*
+	  =>nrel_main_idtf:[Утв.(тушение,варка,жарка)](*<-lang_ru;;*);;
+	  <-sc_statement;;
+	  <= nrel_sc_text_translation: ...
+	    (*
+	    -> rrel_example:
+	    [Тушение считается средним между варкой и жаркой.](*<-lang_ru;;*);;
+	    *);;
+	  *);;

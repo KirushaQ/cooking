@@ -1,0 +1,190 @@
+agent_of_searching_the_most_relevant_key_element
+=> nrel_main_idtf:
+	[агентная scp-программа нахождения наиболее релевантного ключевого узла для пользователя] (* <- lang_ru;; *);
+	[agent scp-program of searching the most relevant key element for an user] (* <- lang_en;; *);
+	<- agent_scp_program;;
+
+scp_program -> agent_of_searching_the_most_relevant_key_element
+	(*
+	-> rrel_params: .agent_of_searching_the_most_relevant_key_element_params 
+		(*
+		-> rrel_1: rrel_in: _event;;
+		-> rrel_2: rrel_in: _input_arc;;
+		*);;
+
+	-> rrel_operators: .agent_of_searching_the_most_relevant_key_element_operator_set 
+		(*
+		-> rrel_init: .agent_of_searching_the_most_relevant_key_element_init1
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+
+			=> nrel_goto: .agent_of_searching_the_most_relevant_key_element_init2;;
+			*);;
+
+		-> .agent_of_searching_the_most_relevant_key_element_init2
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: action_of_searching_the_most_relevant_key_element;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+			=> nrel_then: .agent_of_searching_the_most_relevant_key_element_init3;;
+			=> nrel_else: .agent_of_searching_the_most_relevant_key_element_return;;
+			*);;
+
+		-> .agent_of_searching_the_most_relevant_key_element_init3
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _time;;
+
+			=> nrel_then: .proc0a;;
+			=> nrel_else: .return;; 
+			*);;
+
+		->.proc0a(*
+			<- printEl;;
+			 -> rrel_1: rrel_fixed: rrel_scp_var: _time;;
+
+			 => nrel_goto: .gen_answer;;
+			*);;
+
+
+			-> .gen_answer
+        		(*
+		 	<- genEl;;
+
+		 	-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_struct: rrel_const: _answer;;
+
+		 	=> nrel_goto: .proc1a;;
+		 	*);;
+
+		->.proc1a (*
+			<- searchSetStr5;;
+		 	-> rrel_1: rrel_assign: rrel_scp_var: _recipe;;
+		 	-> rrel_2: rrel_assign: rrel_common: rrel_const: rrel_scp_var: _arc1;;
+		 	-> rrel_3: rrel_fixed: rrel_scp_var: _time;;
+		 	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+		 	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_time_of_a_day;;
+
+			-> rrel_set_1: rrel_assign: rrel_scp_var: _set_of_recipes;;
+
+			=> nrel_then: .proc2a;;
+		 	=> nrel_else: .return;;
+		*);;
+
+		-> .proc2a
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_recipes;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _recipe;;
+
+			=> nrel_then: .proc7a;;
+			=> nrel_else: .proc4a;;
+			*);;
+
+		-> .proc7a
+			(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc1;; 
+
+			=> nrel_goto: .proc8a;;
+			*);;			
+
+		-> .proc8a
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: concept_recipe;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _recipe;;
+
+			=> nrel_then: .proc9a;;
+			=> nrel_else: .proc2a;;
+			*);;
+
+
+		-> .proc9a
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _recipe;;
+
+			=> nrel_goto: .proc2a;;
+			*);;
+
+
+		-> .proc4a
+			(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+			
+			=> nrel_goto: .print_answer;;
+			*);;
+
+
+			->.print_answer(*
+			<- printEl;;
+			 -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+
+			 => nrel_goto: .agent_of_searching_the_most_relevant_key_element_end6;;
+			*);;
+
+		-> .agent_of_searching_the_most_relevant_key_element_end6
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: question_finished_successfully;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+			=> nrel_goto: .return;; 
+			*);;
+
+		-> .agent_of_searching_the_most_relevant_key_element_add_validating_message
+			(*
+		  	<- call;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_adding_validating_message;;
+		  	-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_searching_the_most_relevant_key_element_operator_call_params 
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+				-> rrel_2: rrel_fixed: rrel_scp_const: [Wrong parameter! It must be an time of a day.];;
+				*);;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _descr3;;
+
+		  	=> nrel_goto: .agent_of_searching_the_most_relevant_key_element_add_validating_message_wr;;
+			*);;
+
+		-> .agent_of_searching_the_most_relevant_key_element_add_validating_message_wr
+			(*
+		  	<- waitReturn;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _descr3;;
+
+		  	=> nrel_goto: .return;;
+			*);;
+
+		-> .return
+			(*
+			<- return;;
+			*);;
+		*);;
+	*);;

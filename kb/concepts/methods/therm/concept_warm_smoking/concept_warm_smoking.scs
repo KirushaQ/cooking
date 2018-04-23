@@ -1,0 +1,27 @@
+active_action -> concept_warm_smoking;;
+concept_warm_smoking <- concept_physical_cooking_method;;
+concept_warm_smoking => nrel_main_idtf:
+	[горячее копчение](* <- lang_ru;;*);
+	[warm smoking](* <- lang_en;; *);;
+concept_warm_smoking<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(горячее копчение)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [горячее копчение — термическая обработка продукта горячим дымом.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_warm_smoking <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_warm_smoking.png";;
+		*);;
+	*);;

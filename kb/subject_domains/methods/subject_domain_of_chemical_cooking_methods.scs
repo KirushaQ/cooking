@@ -1,0 +1,17 @@
+subject_domain_of_chemical_cooking_methods
+=> nrel_main_idtf:
+    [Предметная область химических методов приготовления пищи]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [Subject domain of chemical cooking methods]
+    (* <- lang_en;; *);;
+sc_node_struct -> subject_domain_of_chemical_cooking_methods;;
+subject_domain_of_chemical_cooking_methods-> rrel_not_maximum_studied_object_class:
+  concept_sugaring;
+  concept_salting;
+  concept_souring;
+  concept_bathing;
+	concept_pickling;;
+  subject_domain_of_chemical_cooking_methods-> rrel_maximum_studied_object_class:
+  concept_chemical_cooking_method;;
+subject_domain_of_chemical_cooking_methods <- subject_domain;;

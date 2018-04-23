@@ -1,0 +1,27 @@
+active_action -> concept_flambeauing;;
+concept_flambeauing <- concept_physical_cooking_method;;
+concept_flambeauing => nrel_main_idtf:
+	[фламбирование](* <- lang_ru;;*);
+	[flambeauing](* <- lang_en;; *);;
+concept_flambeauing<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(Фламбирование)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Фламбирование - приём кулинарной обработки, при котором блюдо поливают коньяком, водкой или другим крепким алкогольным напитком и поджигают, при этом спирт выгорает, а у блюда появляются своеобразные вкус и аромат.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_flambeauing <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_flambeauing.png";;
+		*);;
+	*);;

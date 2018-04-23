@@ -1,0 +1,17 @@
+subject_domain_of_cooking_appliance
+=> nrel_main_idtf:
+    [Предметная область приспособлений для приготовления пищи]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [Subject domain of cooking appliance]
+    (* <- lang_en;; *);;
+sc_node_struct -> subject_domain_of_cooking_appliance;;
+
+subject_domain_of_cooking_appliance-> rrel_maximum_studied_object_class:
+	concept_frying_pan;
+	concept_pan;;
+
+subject_domain_of_cooking_appliance -> rrel_explored_relation:
+	nrel_volume;;
+
+subject_domain_of_cooking_appliance <- subject_domain;;

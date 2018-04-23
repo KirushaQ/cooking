@@ -1,0 +1,29 @@
+active_action -> concept_grilling;;
+concept_grilling <- concept_physical_cooking_method;;
+concept_grilling => nrel_main_idtf:
+	[гриллирование](* <- lang_ru;;*);
+	[grilling](* <- lang_en;; *);;
+	concept_grilling => nrel_main_idtf:
+		[обжигание](* <- lang_ru;;*);;
+concept_grilling<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(Гриллирование)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Гриллирование — кулинарный приём,который заключается в обработке продукта открытым огнём до готовности.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_grilling <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_grilling.png";;
+		*);;
+	*);;

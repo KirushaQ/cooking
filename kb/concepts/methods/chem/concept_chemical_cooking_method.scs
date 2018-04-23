@@ -1,0 +1,19 @@
+active_action -> concept_chemical_cooking_method;;
+concept_chemical_cooking_method <- concept_cooking_method;;
+concept_chemical_cooking_method => nrel_main_idtf:
+	[химическая обработка](* <- lang_ru;; *);
+	[chemical cooking method](* <- lang_en;; *);;
+
+concept_chemical_cooking_method => nrel_idtf: [химический приём приготовления пищи] (* <- lang_ru;; *);;
+concept_chemical_cooking_method<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(химическая обработка)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Химическая обработка — способ приготовления пищи , при котором происходит изменение химического состава продукта.](*<-lang_ru;;*);;
+*);;
+*);;

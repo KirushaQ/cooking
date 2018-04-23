@@ -1,0 +1,27 @@
+active_action -> concept_confit;;
+concept_confit <- concept_physical_cooking_method;;
+concept_confit => nrel_main_idtf:
+	[конфи](* <- lang_ru;;*);
+	[confit](* <- lang_en;; *);;
+concept_confit<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(Конфи)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Конфи — медленное тушение продуктов (чаще всего птицы или мяса) полностью погруженных в жир при температуре около 100°C.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_confit <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_confit.png";;
+		*);;
+	*);;

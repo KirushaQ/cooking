@@ -1,0 +1,33 @@
+active_action -> concept_cooking_method;;
+
+concept_cooking_method => nrel_main_idtf:
+	[метод приготовления](* <- lang_ru;; *);
+	[cooking_method](* <- lang_en;; *);;
+
+concept_cooking_method<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(соление)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Метод приготовления - набор операций по измененению состояния пищевых продуктов.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_cooking_method <= nrel_subdividing:
+	...
+	(*
+	=> nrel_main_idtf: [Разбиение по этапу приготовления] (* <- lang_ru;; *);;
+	-> concept_final_stage;
+concept_main_stage;
+	concept_preliminary_stage;;
+	*);;
+	concept_cooking_method <= nrel_subdividing:
+		...
+		(*
+		=> nrel_main_idtf: [Разбиение по способу воздействия] (* <- lang_ru;; *);;
+		-> concept_physical_cooking_method;
+			concept_chemical_cooking_method;;
+		*);;

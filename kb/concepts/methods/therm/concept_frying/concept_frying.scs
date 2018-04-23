@@ -1,0 +1,27 @@
+active_action -> concept_frying;;
+concept_frying <- concept_physical_cooking_method;;
+concept_frying => nrel_main_idtf:
+	[жарка](* <- lang_ru;;*);
+	[frying](* <- lang_en;; *);;
+concept_frying<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(Жарка)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Жарка — разновидность термической обработки продуктов, в которой рабочим телом является жир (масло).](*<-lang_ru;;*);;
+*);;
+*);;
+concept_frying <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_frying.png";;
+		*);;
+	*);;

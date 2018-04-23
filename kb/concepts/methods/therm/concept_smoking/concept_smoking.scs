@@ -1,0 +1,58 @@
+active_action -> concept_smoking;;
+concept_smoking <- concept_physical_cooking_method;;
+concept_smoking => nrel_main_idtf:
+	[копчение](* <- lang_ru;;*);
+	[smoking](* <- lang_en;; *);;
+concept_smoking<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(Копчение)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Копче́ние — вид тепловой обработки eды, придающий аромат и оказывающий консервирующее действие.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_smoking <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_smoking.png";;
+		*);;
+	*);;
+	concept_smoking <- rrel_key_sc_element:
+	  ...
+	  (*
+	  =>nrel_main_idtf:[Утв.(копчение,срок хранения)](*<-lang_ru;;*);;
+	  <-sc_statement;;
+	  <= nrel_sc_text_translation: ...
+	    (*
+	    -> rrel_example:
+	    [Продукты, подвергнутые копчению, пропитываются бактериостатическими веществами коптильного дыма и частично обезвоживаются, благодаря чему их срок хранения многократно увеличивается.](*<-lang_ru;;*);;
+	    *);;
+	  *);;
+
+		concept_smoking <- rrel_key_sc_element:
+		  ...
+		  (*
+		  =>nrel_main_idtf:[Утв.(копчение,вкус)](*<-lang_ru;;*);;
+		  <-sc_statement;;
+		  <= nrel_sc_text_translation: ...
+		    (*
+		    -> rrel_example:
+		    [К веществам, придающим копченым продуктам особый вкус и аромат, относятся фенолы и их производные, а также некоторые фракции альдегидов и смолистых веществ, муравьиная и уксусная кислоты.](*<-lang_ru;;*);;
+		    *);;
+		  *);;
+
+			concept_smoking<= nrel_subdividing:
+	...
+	(*
+	=> nrel_main_idtf: [Разбиение по температуре копчения] (* <- lang_ru;; *);;
+	-> concept_warm_smoking;
+	concept_cold_smoking;;
+	*);;

@@ -1,0 +1,30 @@
+active_action -> concept_sugaring;;
+concept_sugaring <- concept_chemical_cooking_method;;
+concept_sugaring => nrel_main_idtf:
+	[засахаривание](* <- lang_ru;; *);
+	[sugaring](* <- lang_en;; *);;
+
+concept_sugaring => nrel_idtf: [заготовка сахаром] (* <- lang_ru;; *);;
+
+concept_sugaring<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(засахаривание)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Засахаривание — внесение в продукт избыточного количества сахара. Применяется в отношении фруктов и ягод.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_sugaring <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_sugaring.png";;
+		*);;
+	*);;

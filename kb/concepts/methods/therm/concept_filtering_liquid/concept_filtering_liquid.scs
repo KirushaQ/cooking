@@ -1,0 +1,38 @@
+active_action -> concept_filtering_liquid;;
+concept_filtering_liquid <- concept_physical_cooking_method;;
+concept_filtering_liquid => nrel_main_idtf:
+	[отцеживание](* <- lang_ru;;*);
+	[filtering_liquid](* <- lang_en;; *);;
+concept_filtering_liquid<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(Отцеживание)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Отцеживание — удаление излишков влаги из продукта.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_filtering_liquid <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_filtering_liquid.png";;
+		*);;
+	*);;
+	concept_filtering_liquid <- rrel_key_sc_element:
+	  ...
+	  (*
+	  =>nrel_main_idtf:[Утв.(отцеживание,процеживание)](*<-lang_ru;;*);;
+	  <-sc_statement;;
+	  <= nrel_sc_text_translation: ...
+	    (*
+	    -> rrel_example:
+	    [Процесс обратный отцеживанию - процеживание.](*<-lang_ru;;*);;
+	    *);;
+	  *);;

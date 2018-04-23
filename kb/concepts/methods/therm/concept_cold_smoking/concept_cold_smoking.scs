@@ -1,0 +1,27 @@
+active_action -> concept_cold_smoking;;
+concept_cold_smoking <- concept_physical_cooking_method;;
+concept_cold_smoking => nrel_main_idtf:
+	[холодное копчение](* <- lang_ru;;*);
+	[cold smoking](* <- lang_en;; *);;
+concept_cold_smoking<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(холодное копчение)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Холодное копчение — обработка продукта холодным дымом тлеющих веществ.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_cold_smoking <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_cold_smoking.png";;
+		*);;
+	*);;

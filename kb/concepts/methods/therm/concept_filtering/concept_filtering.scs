@@ -1,0 +1,25 @@
+active_action -> concept_filtering;;
+concept_filtering <- concept_physical_cooking_method;;
+concept_filtering => nrel_main_idtf:
+	[фильтрование](* <- lang_ru;;*);
+	[filtering](* <- lang_en;; *);;
+concept_filtering<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(Фильтрование)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Фильтрование  — процесс разделения неоднородных (дисперсных) систем (например, суспензия, аэрозоль) при помощи пористых перегородок, пропускающих дисперсионную среду и задерживающих дисперсную твёрдую фазу.](*<-lang_ru;;*);;
+*);;
+*);;
+
+			concept_filtering<= nrel_subdividing:
+	...
+	(*
+	=> nrel_main_idtf: [Разбиение по типу фильтрования] (* <- lang_ru;; *);;
+	-> concept_filtering_liquid;
+	concept_filtering_solid;;
+	*);;

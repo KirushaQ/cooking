@@ -1,0 +1,17 @@
+active_action -> concept_final_stage;;
+concept_final_stage <- concept_stage;;
+concept_final_stage => nrel_main_idtf:
+	[заключительный этап](* <- lang_ru;; *);
+	[final stage](* <- lang_en;; *);;
+concept_final_stage<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(заключительный этап)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Заключительный этап - этап приготовления пищи на котором происходит улучшение вкусовых качеств, придание оттенков вкуса,улучшение внешнего вида продукта , удаление костей и вспомогательных материалов (нитки, заколки, панады), устранение выявленных недостатков блюда, разделение на порции.](*<-lang_ru;;*);;
+*);;
+*);;

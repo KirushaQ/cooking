@@ -1,0 +1,29 @@
+active_action -> concept_steaming;;
+concept_steaming <- concept_physical_cooking_method;;
+concept_steaming => nrel_main_idtf:
+	[готовка на пару](* <- lang_ru;;*);
+	[steaming](* <- lang_en;; *);;
+	concept_steaming => nrel_idtf:
+		[паровая кухня](* <- lang_ru;;*);;
+concept_steaming<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(Готовка на пару)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Готовка на пару — вариант термической обработки продуктов питания горячим паром..](*<-lang_ru;;*);;
+*);;
+*);;
+concept_steaming <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_steaming.png";;
+		*);;
+	*);;

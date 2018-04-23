@@ -1,0 +1,15 @@
+subject_domain_of_cooking_stages
+=> nrel_main_idtf:
+    [Предметная область этапов приготовления пищи]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [Subject domain of cooking stages]
+    (* <- lang_en;; *);;
+sc_node_struct -> subject_domain_of_cooking_stages;;
+subject_domain_of_cooking_stages-> rrel_not_maximum_studied_object_class:
+  concept_final_stage;
+  concept_main_stage;
+  concept_preliminary_stage;;
+  subject_domain_of_cooking_stages-> rrel_maximum_studied_object_class:
+  concept_stage ;;
+subject_domain_of_cooking_stages <- subject_domain;;

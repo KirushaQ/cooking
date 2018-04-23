@@ -1,0 +1,50 @@
+active_action -> concept_freezing;;
+concept_freezing <- concept_physical_cooking_method;;
+concept_freezing => nrel_main_idtf:
+	[замораживание](* <- lang_ru;;*);
+	[freezing](* <- lang_en;; *);;
+concept_freezing<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(Замораживание)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Замораживание — вид обработки, который применяется для хранения продуктов: исходных (мясо, рыба, грибы), полуфабрикатов (пельмени, креветки), либо готовых к употреблению (ягоды, фрукты).](*<-lang_ru;;*);;
+*);;
+*);;
+concept_freezing <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_freezing.png";;
+		*);;
+	*);;
+	concept_freezing <- rrel_key_sc_element:
+	  ...
+	  (*
+	  =>nrel_main_idtf:[Утв.(Замораживание,вкус)](*<-lang_ru;;*);;
+	  <-sc_statement;;
+	  <= nrel_sc_text_translation: ...
+	    (*
+	    -> rrel_example:
+	    [Замораживание некоторых фруктов и ягод (хурма, рябина) для удаления горечи](*<-lang_ru;;*);;
+	    *);;
+	  *);;
+
+		concept_freezing <- rrel_key_sc_element:
+		  ...
+		  (*
+		  =>nrel_main_idtf:[Утв.(Замораживание,мороженое)](*<-lang_ru;;*);;
+		  <-sc_statement;;
+		  <= nrel_sc_text_translation: ...
+		    (*
+		    -> rrel_example:
+		    [Замораживание используется для придания продукту определенного вида, обычного для использования (мороженое).](*<-lang_ru;;*);;
+		    *);;
+		  *);;

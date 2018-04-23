@@ -1,0 +1,16 @@
+active_action -> concept_stage;;
+concept_stage => nrel_main_idtf:
+	[этап](* <- lang_ru;; *);
+	[stage](* <- lang_en;; *);;
+concept_stage<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(этап)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Этап - отдельная стадия (момент) какого-либо процесса.](*<-lang_ru;;*);;
+*);;
+*);;

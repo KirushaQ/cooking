@@ -1,0 +1,28 @@
+active_action -> concept_bathing;;
+concept_bathing <- concept_chemical_cooking_method;;
+concept_bathing => nrel_main_idtf:
+	[мочение](* <- lang_ru;; *);
+	[bathing](* <- lang_en;; *);;
+
+concept_bathing<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(мочение)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Мочение — помещение продукта в воду с незначительным добавлением кислот, соли, сахара, или вовсе без такого добавления.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_bathing <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_bathing.png";;
+		*);;
+	*);;

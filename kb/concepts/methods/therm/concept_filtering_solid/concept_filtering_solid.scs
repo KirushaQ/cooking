@@ -1,0 +1,38 @@
+active_action -> concept_filtering_solid;;
+concept_filtering_solid <- concept_physical_cooking_method;;
+concept_filtering_solid => nrel_main_idtf:
+	[процеживание](* <- lang_ru;;*);
+	[filtering_solid](* <- lang_en;; *);;
+concept_filtering_solid<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(Процеживание)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Процеживание - процесс, направленный на удаление из состава жидких субстанций как крупных, так и более мелких частиц.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_filtering_solid <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_filtering_solid.png";;
+		*);;
+	*);;
+	concept_filtering_solid <- rrel_key_sc_element:
+	  ...
+	  (*
+	  =>nrel_main_idtf:[Утв.(отцеживание,процеживание)](*<-lang_ru;;*);;
+	  <-sc_statement;;
+	  <= nrel_sc_text_translation: ...
+	    (*
+	    -> rrel_example:
+	    [Процесс обратный процеживанию - отцеживание.](*<-lang_ru;;*);;
+	    *);;
+	  *);;

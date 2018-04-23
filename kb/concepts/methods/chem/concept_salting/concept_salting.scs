@@ -1,0 +1,30 @@
+active_action -> concept_salting;;
+concept_salting <- concept_chemical_cooking_method;;
+concept_salting => nrel_main_idtf:
+	[соление](* <- lang_ru;; *);
+	[salting](* <- lang_en;; *);;
+
+concept_salting => nrel_idtf: [засолка] (* <- lang_ru;; *);;
+concept_salting => nrel_idtf: [соленье] (* <- lang_ru;; *);;
+concept_salting<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(соление)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Соление — способ консервирования при помощи соли, высокое содержание которой в продуктах затрудняет развитие бактерий и плесеней, продукты жизнедеятельности которых делают пищу несъедобной для человека, либо приводят к порче непищевых продуктов.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_salting <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_salting.png";;
+		*);;
+	*);;

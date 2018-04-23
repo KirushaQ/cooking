@@ -1,0 +1,38 @@
+active_action -> concept_melting;;
+concept_melting <- concept_physical_cooking_method;;
+concept_melting => nrel_main_idtf:
+	[распускание](* <- lang_ru;;*);
+	[melting](* <- lang_en;; *);;
+concept_melting<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(Распускание)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Распускание —  доведение твёрдого жира (масла) до жидкого состояния, сахара — до сиропа и т. п.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_melting <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_melting.png";;
+		*);;
+	*);;
+	concept_melting <- rrel_key_sc_element:
+	  ...
+	  (*
+	  =>nrel_main_idtf:[Утв.(Распускание,растворение)](*<-lang_ru;;*);;
+	  <-sc_statement;;
+	  <= nrel_sc_text_translation: ...
+	    (*
+	    -> rrel_example:
+	    [ Иногда распусканием называют томление в бульоне мелко нарезанного лука и даже чешуи мелких рыб до совершенного растворения.](*<-lang_ru;;*);;
+	    *);;
+	  *);;

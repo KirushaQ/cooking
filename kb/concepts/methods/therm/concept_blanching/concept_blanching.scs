@@ -1,0 +1,38 @@
+active_action -> concept_blanching;;
+concept_blanching <- concept_physical_cooking_method;;
+concept_blanching => nrel_main_idtf:
+	[бланширование](* <- lang_ru;;*);
+	[blanching](* <- lang_en;; *);;
+concept_blanching<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(выпекание)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Бланширование — кратковременное ошпаривание, или крайне недолгая (1 минута) варка продукта.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_blanching <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_blanching.png";;
+		*);;
+	*);;
+	concept_blanching <- rrel_key_sc_element:
+		...
+		(*
+		=>nrel_main_idtf:[Утв.(бланширование,примененение)](*<-lang_ru;;*);;
+		<-sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:
+			[Применяется для быстроварких продуктов (например, кальмаров), для более лёгкой очистки продукта от кожицы, для консервирования и, наконец, для уничтожения вредных бактерий.](*<-lang_ru;;*);;
+			*);;
+		*);;

@@ -1,0 +1,19 @@
+active_action -> concept_physical_cooking_method;;
+concept_physical_cooking_method <- concept_cooking_method;;
+concept_physical_cooking_method => nrel_main_idtf:
+	[физическая обработка](* <- lang_ru;; *);
+	[physical cooking method](* <- lang_en;; *);;
+
+concept_physical_cooking_method => nrel_idtf: [физический приём приготовления пищи] (* <- lang_ru;; *);;
+concept_physical_cooking_method<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(физическая обработка)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Физическая обработка — способ приготовления пищи , при котором происходит изменение физического состояния продукта.](*<-lang_ru;;*);;
+*);;
+*);;

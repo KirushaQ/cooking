@@ -1,0 +1,14 @@
+subject_domain_of_physical_cooking_methods
+=> nrel_main_idtf:
+    [Предметная область физических методов приготовления пищи]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [Subject domain of physical cooking methods]
+    (* <- lang_en;; *);;
+sc_node_struct -> subject_domain_of_physical_cooking_methods;;
+subject_domain_of_physical_cooking_methods <= nrel_private_subject_domain: subject_domain_of_mechanical_cooking_methods;;
+subject_domain_of_physical_cooking_methods <= nrel_private_subject_domain: subject_domain_of_thermal_cooking_methods;;
+
+  subject_domain_of_physical_cooking_methods-> rrel_maximum_studied_object_class:
+  	concept_physical_cooking_method;;
+subject_domain_of_physical_cooking_methods <- subject_domain;;

@@ -1,0 +1,36 @@
+lib_component_agent_of_searching_the_most_relevant_key_element
+=> nrel_main_idtf:
+	[Компонент библиотеки. sc-агент нахождения наиболее релевантного ключевого узла для пользователя]
+	(* <- lang_ru;; *);
+	[Library component. sc-agent of searching the most relevant key element for an user]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components; 
+<- library_of_atomic_reusable_components; 
+
+=> nrel_attendant_component: 
+	lib_component_ui_menu_file_for_searching_the_most_relevant_key_element; 
+
+-> rrel_key_sc_element: 
+	.platform_independent_realization_of_sc_agent_of_searching_the_most_relevant_key_element; 
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/agent_of_searching_the_most_relevant_key_element.html"
+				(* <- lang_ru;; *);; 
+		*);;
+	*);;
+
+action_of_searching_the_most_relevant_key_element
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[действие. найти наиболее релевантный ключевой узел для пользователя]
+ 	(* <- lang_ru;; *);
+ 	[action. search the most relevant key element for an user]
+ 	(* <- lang_en;; *);; 

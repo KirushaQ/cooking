@@ -1,0 +1,39 @@
+active_action -> concept_pickling;;
+concept_pickling <- concept_chemical_cooking_method;;
+concept_pickling => nrel_main_idtf:
+	[маринование](* <- lang_ru;; *);
+	[pickling](* <- lang_en;; *);;
+
+concept_pickling<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(маринование)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Маринование — помещение продукта в специальную среду (маринад), как правило, кислую и, как правило, жидкую.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_pickling <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_pickling.png";;
+		*);;
+	*);;
+	concept_pickling <- rrel_key_sc_element:
+		...
+		(*
+		=>nrel_main_idtf:[Утв.(маринование,хранение)](*<-lang_ru;;*);;
+		<-sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:
+			[Применяется для предварительной обработки продукта (маринование мяса с целью его размягчения и ускорения последующего приготовления, например — для шашлыка), а также для хранения продукта.](*<-lang_ru;;*);;
+			*);;
+		*);;

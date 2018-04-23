@@ -1,0 +1,27 @@
+active_action -> concept_calcination;;
+concept_calcination <- concept_physical_cooking_method;;
+concept_calcination => nrel_main_idtf:
+	[прокаливание](* <- lang_ru;;*);
+	[calcination](* <- lang_en;; *);;
+concept_calcination<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(прокаливание)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Прокаливание — обязательный этап подготовки масла к жарению: в результате этого масло очищается от вредных примесей, светлеет и меньше пригорает.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_calcination <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_calcination.png";;
+		*);;
+	*);;

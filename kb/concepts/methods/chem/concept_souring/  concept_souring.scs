@@ -1,0 +1,52 @@
+active_action -> concept_souring;;
+concept_souring <- concept_chemical_cooking_method;;
+concept_souring => nrel_main_idtf:
+	[квашение](* <- lang_ru;; *);
+	[souring](* <- lang_en;; *);;
+
+concept_souring => nrel_idtf: [закваска] (* <- lang_ru;; *);;
+
+concept_souring<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(квашение)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Квашение — помещение продукта (часто предварительно измельченного, передавленного и т. п.) в определенную внешнюю среду, в условиях которой продукт начинает изменяться благодаря естественным биохимическим процессам: активизируются специфические формы бактерий, перерабатывающие продукт.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_souring <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_souring.png";;
+		*);;
+	*);;
+	concept_souring <- rrel_key_sc_element:
+		...
+		(*
+		=>nrel_main_idtf:[Утв.(квашение,закваска)](*<-lang_ru;;*);;
+		<-sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:
+			[Иногда для этого добавляется незначительное количество сохраненных бактерий (закваска).](*<-lang_ru;;*);;
+			*);;
+		*);;
+		concept_souring <- rrel_key_sc_element:
+			...
+			(*
+			=>nrel_main_idtf:[Утв.(квашение,хранение)](*<-lang_ru;;*);;
+			<-sc_statement;;
+			<= nrel_sc_text_translation: ...
+				(*
+				-> rrel_example:
+				[Квашение применяется для предварительной обработки перед длительным хранением..](*<-lang_ru;;*);;
+				*);;
+			*);;
