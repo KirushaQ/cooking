@@ -1,0 +1,38 @@
+active_action -> concept_breading;;
+concept_breading <- concept_physical_cooking_method;;
+concept_breading => nrel_main_idtf:
+	[панирование](* <- lang_ru;;*);
+	[breading](* <- lang_en;; *);;
+concept_breading<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(Панирование)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Панирование — нанесение на поверхность продукта съедобного покрытия (панады), способствующего сохранению влаги в блюде.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_breading <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_breading.png";;
+		*);;
+	*);;
+	concept_breading <- rrel_key_sc_element:
+		...
+		(*
+		=>nrel_main_idtf:[Утв.(Панирование,продукт)](*<-lang_ru;;*);;
+		<-sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example:
+			[Панировка может быть различной, начиная от сухарей, заканчивая мукой.](*<-lang_ru;;*);;
+			*);;
+		*);;

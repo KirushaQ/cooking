@@ -1,0 +1,27 @@
+active_action -> concept_gelling;;
+concept_gelling <- concept_physical_cooking_method;;
+concept_gelling => nrel_main_idtf:
+	[желирование](* <- lang_ru;;*);
+	[gelling](* <- lang_en;; *);;
+concept_gelling<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(Желирование)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Желирование — внесение в жидкость желеобразующих веществ, типа желатина или агар-агара.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_gelling <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_gelling.png";;
+		*);;
+	*);;

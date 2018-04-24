@@ -1,0 +1,27 @@
+active_action -> concept_buckling;;
+concept_buckling <- concept_physical_cooking_method;;
+concept_buckling => nrel_main_idtf:
+	[шпигование](* <- lang_ru;;*);
+	[buckling](* <- lang_en;; *);;
+concept_buckling<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(шпигование)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Шпигование — введение внутрь продукта небольших частиц другого продукта.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_buckling <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_buckling.png";;
+		*);;
+	*);;

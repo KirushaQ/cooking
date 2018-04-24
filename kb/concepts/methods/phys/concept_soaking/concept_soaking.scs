@@ -1,0 +1,27 @@
+active_action -> concept_soaking;;
+concept_soaking <- concept_physical_cooking_method;;
+concept_soaking => nrel_main_idtf:
+	[вымачивание](* <- lang_ru;;*);
+	[soaking](* <- lang_en;; *);;
+concept_soaking<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(Вымачивание)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Вымачивание — погружение продукта в воду или специальный раствор с целью удаления излишней горечи, кислоты, соли и т. п.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_soaking <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_soaking.png";;
+		*);;
+	*);;

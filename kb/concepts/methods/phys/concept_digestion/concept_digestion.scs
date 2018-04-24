@@ -1,0 +1,27 @@
+active_action -> concept_digestion;;
+concept_digestion <- concept_physical_cooking_method;;
+concept_digestion => nrel_main_idtf:
+	[вываривание](* <- lang_ru;;*);
+	[digestion](* <- lang_en;; *);;
+concept_digestion<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(вываривание)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Вываривание — предварительное кипячение продукта в воде (слабом растворе поваренной соли) с последующим слитием воды (раствора) с целью удаления излишней горечи, кислоты, соли, запаха или других вкусовых аномалий.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_digestion <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_digestion.png";;
+		*);;
+	*);;

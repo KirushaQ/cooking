@@ -32,9 +32,14 @@ var self = this;
         container.append('<div class="sc-no-default-cmd">Найти рецепт подходящий для приготовления в выбраное время суток</div>');
         container.append('<button id="findRecipe" type="button">Найти рецепт</button>');
 	container.append('<select id="comboboxTime"><option value="concept_morning">утро</option><option value="concept_afternoon">день</option><option value="concept_night">ночь</option></select>');
+	container.append('<div class="sc-no-default-cmd">Кулинарные опции</div>');
+        container.append('<button id="newButton" type="button">Заменить ингридиент на альтернативный</button>');
 
         $('#findRecipe').click(function () {
 			self._findByTime();
+		});
+  $('#newButton').click(function () {
+			self._showMainMenuNode();
 		});
     },
 
@@ -64,6 +69,22 @@ var self = this;
 				});
 			});
 		});
+	},
+_showMainMenuNode: function () {
+			SCWeb.core.Server.resolveScAddr(["ui_menu_find_alternatives"],
+			function (data) {
+				// Get command of ui_menu_view_full_semantic_neighborhood
+				var cmd = data["ui_menu_find_alternatives"];
+				// Simulate click on ui_menu_view_full_semantic_neighborhood button
+				SCWeb.core.Main.doCommand(cmd,
+				[SCWeb.core.Arguments._arguments[0]], function (result) {
+					// waiting for result
+					if (result.question != undefined) {
+						// append in history
+						SCWeb.ui.WindowManager.appendHistoryItem(result.question);
+					}
+				});
+			});
 	}
 };
 

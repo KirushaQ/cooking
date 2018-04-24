@@ -1,0 +1,27 @@
+active_action -> concept_evisceration;;
+concept_evisceration <- concept_physical_cooking_method;;
+concept_evisceration => nrel_main_idtf:
+	[потрошение](* <- lang_ru;;*);
+	[evisceration](* <- lang_en;; *);;
+concept_evisceration<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(Потрошение)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Потрошение -  удаление внутренностей у рыбы, птицы, животных.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_evisceration <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_evisceration.png";;
+		*);;
+	*);;

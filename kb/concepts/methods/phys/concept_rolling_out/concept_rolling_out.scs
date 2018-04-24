@@ -1,0 +1,27 @@
+active_action -> concept_rolling_out;;
+concept_rolling_out <- concept_physical_cooking_method;;
+concept_rolling_out => nrel_main_idtf:
+	[раскатывание](* <- lang_ru;;*);
+	[rolling out](* <- lang_en;; *);;
+concept_rolling_out<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(Раскатывание)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Раскатывание — увеличение площади продукта.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_rolling_out <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_rolling_out.png";;
+		*);;
+	*);;

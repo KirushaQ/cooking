@@ -1,0 +1,27 @@
+active_action -> concept_grinding;;
+concept_grinding <- concept_physical_cooking_method;;
+concept_grinding => nrel_main_idtf:
+	[измельчение](* <- lang_ru;;*);
+	[grinding](* <- lang_en;; *);;
+concept_grinding<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(измельчение)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Измельчение - вид обработки,направленный на уменьшение размера продукта, том числе с использованием механических приспособлений](*<-lang_ru;;*);;
+*);;
+*);;
+concept_grinding <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_grinding.png";;
+		*);;
+	*);;

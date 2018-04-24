@@ -1,0 +1,18 @@
+nrel_time_of_the_day <- sc_no_role_relation;;
+nrel_time_of_the_day => nrel_main_idtf:
+	[время дня](* <- lang_ru;; *);
+	[time of the day](* <- lang_en;; *);;
+
+
+nrel_time_of_the_day<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(Время дня)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Время дня - промежуток времени в течение дня.](*<-lang_ru;;*);;
+*);;
+*);;
