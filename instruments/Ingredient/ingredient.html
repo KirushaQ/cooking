@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+    <script src="ingredient.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    textarea#form7 {
+        margin: 20px;
+        height: 500px;
+    }
+    body {
+        background-color: #fffdf0;
+    }
+    button#buttonCopy {
+        position: absolute;
+        right: 10px;
+    }
+</style>
+<body>
+<div class="container">
+    <div class="row">
+    <div class="col">
+        <div class="form-group">
+            <label for="engNameIngredient">Eng name ingredient</label>
+            <input type="text" class="form-control" id="engNameIngredient" placeholder="Enter eng name ingredient">
+        </div>
+
+        <div class="form-group">
+            <label for="rusNameIngredient">Rus name ingredient</label>
+            <input type="text" class="form-control" id="rusNameIngredient" placeholder="Enter rus name ingredient">
+        </div>
+
+        <div class="form-group">
+            <label for="imageUrl">Path to image</label>
+            <input type="text" class="form-control" id="imageUrl" placeholder="Path to image">
+        </div>
+        <div class="form-group">
+            <label for="selectTypeIngredient">Type of ingredient</label>
+
+            <select class="form-control marginBottom1rem " id="selectTypeIngredient">
+                    <option value=concept_animal_product>Продукт жизнедеятельности животных</option>
+                    <option value=concept_bakery>Хлебопекарное изделие</option>
+                    <option value=concept_beans>Бобы</option>
+                    <option value=concept_cereal>Крупа</option>
+                    <option value=concept_fatty_product>Жировой продукт</option>
+                    <option value=concept_fetus>Плод</option>
+                    <option value=concept_grocery>Бакалея</option>
+                    <option value=concept_fruit>Фрукт</option>
+                    <option value=concept_herb>Зелень</option>
+                    <option value=concept_milk_product>Молочный продукт</option>
+                    <option value=concept_sauce>Соус</option>
+                    <option value=concept_spice>Специи</option>
+                    <option value=concept_vegetable>Овощ</option>
+                    <option value=concept_viande>Мясо</option>
+                </select>
+
+        </div>
+        <div class="form-group">
+            <label for="calories">Сalories</label>
+            <input type="text" class="form-control" id="calories" placeholder="calories">
+        </div>
+        <div class="form-group">
+            <label for="price">Price</label>
+            <input type="text" class="form-control" id="price" placeholder="price">
+        </div>
+        <div class="form-group">
+            <label for="sttime">Storage time</label>
+            <input type="text" class="form-control" id="sttime" placeholder="storage time">
+        </div>
+        <div class="form-group">
+            <label for="stconditions">Storage conditions</label>
+            <input type="text" class="form-control" id="stconditions" placeholder="storage conditions">
+        </div>
+        <div class="form-group">
+            <label for="gindex">Glycemic index</label>
+            <input type="text" class="form-control" id="gindex" placeholder="glycemic index">
+        </div>
+
+
+        <button type="submit" id="buttonSubmit" class="btn btn-primary">Submit</button>
+    </div>
+    <div class="col">
+    <textarea type="text" id="form7" class="md-textarea form-control" rows="3"></textarea>
+        <button type="submit" id="buttonCopy" class="btn btn-primary">Copy</button>
+    </div>
+    </div>
+
+
+</div>
+</body>
+</html>
