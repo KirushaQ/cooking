@@ -1,0 +1,26 @@
+concept_condiment => nrel_main_idtf:
+	[вкусовая добавка](* <- lang_ru;; *);
+	[condiment](* <- lang_en;; *);;
+
+concept_condiment<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(вкусовая добавка)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Вкусовые добавки  — химические вещества, отдельные части биологических продуктов растительного происхождения и их смеси, предназначенные для улучшения вкусовых и ароматических качеств приготавливаемых продуктов питания и готовых блюд. ](*<-lang_ru;;*);;
+*);;
+*);;
+concept_condiment <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_condiment.png";;
+		*);;
+	*);;

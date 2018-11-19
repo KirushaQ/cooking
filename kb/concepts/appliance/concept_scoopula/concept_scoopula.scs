@@ -1,0 +1,27 @@
+concept_scoopula <- concept_kitchen_stove;;
+concept_scoopula => nrel_main_idtf:
+	[лопатка](* <- lang_ru;; *);
+	[scoopula](* <- lang_en;; *);;
+
+concept_scoopula<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(лопатка](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Лопатка - столовый прибор для манипуляции пищей.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_scoopula <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_scoopula.png";;
+		*);;
+	*);;

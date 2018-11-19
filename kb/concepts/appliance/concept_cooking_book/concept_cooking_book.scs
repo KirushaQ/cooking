@@ -1,0 +1,27 @@
+concept_cooking_book <- concept_kitchen_stove;;
+concept_cooking_book => nrel_main_idtf:
+	[поваренная книга](* <- lang_ru;; *);
+	[cooking book](* <- lang_en;; *);;
+
+concept_cooking_book<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(Поваренная книга)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Поваренная книга — справочное издание, содержащее в основном различные рецепты приготовления пищи и напитков. ](*<-lang_ru;;*);;
+*);;
+*);;
+concept_cooking_book <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_cooking_book.png";;
+		*);;
+	*);;

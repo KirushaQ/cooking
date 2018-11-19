@@ -1,0 +1,28 @@
+active_action -> concept_julienning;;
+concept_julienning <- concept_chemical_cooking_method;;
+concept_julienning => nrel_main_idtf:
+	[жульен](* <- lang_ru;; *);
+	[julienning](* <- lang_en;; *);;
+
+concept_julienning<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(жульен)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Жюлье́н — особый способ нарезки молодых овощей тонкой соломкой.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_julienning <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_julienning.png";;
+		*);;
+	*);;

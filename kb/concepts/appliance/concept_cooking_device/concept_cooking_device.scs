@@ -1,0 +1,27 @@
+concept_cooking_device <- concept_kitchen_stove;;
+concept_cooking_device => nrel_main_idtf:
+	[кулинарный прибор](* <- lang_ru;; *);
+	[cooking device](* <- lang_en;; *);;
+
+concept_cooking_device<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(кулинарный прибор)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Кулинарный прибор - инструмент используемый при приготовлении пищи и напитков. ](*<-lang_ru;;*);;
+*);;
+*);;
+concept_cooking_device <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_cooking_device.png";;
+		*);;
+	*);;

@@ -1,0 +1,27 @@
+concept_spoon <- concept_cutlery_item;;
+concept_spoon => nrel_main_idtf:
+	[ложка](* <- lang_ru;; *);
+	[spoon](* <- lang_en;; *);;
+
+concept_spoon<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(ложка)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Ложка — предмет из столового набора, используемый для потребления жидких блюд.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_spoon <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_spoon.png";;
+		*);;
+	*);;

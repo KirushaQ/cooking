@@ -1,0 +1,17 @@
+concept_diet_science <- sc_node_not_relation;;
+concept_diet_science => nrel_main_idtf:
+	[диетология](* <- lang_ru;; *);
+	[dietology](* <- lang_en;; *);;
+
+concept_diet_science<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(диетология)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Диетоло́гия — область знания, изучающая вопросы питания, в том числе больного человека.](*<-lang_ru;;*);;
+*);;
+*);;

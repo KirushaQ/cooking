@@ -1,0 +1,28 @@
+active_action -> concept_fermentation;;
+concept_fermentation<- concept_chemical_cooking_method;;
+concept_fermentation=> nrel_main_idtf:
+	[брожение](* <- lang_ru;; *);
+	[fermentation](* <- lang_en;; *);;
+
+concept_fermentation<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(брожение)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Брожение- способ приготовления пищи, основанный на метаболических процессах.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_fermentation<- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_fermentation.png";;
+		*);;
+	*);;

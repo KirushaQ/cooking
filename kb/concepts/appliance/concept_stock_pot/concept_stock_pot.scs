@@ -1,0 +1,26 @@
+concept_stock_pot => nrel_main_idtf:
+	[кастрюля](* <- lang_ru;; *);
+	[stock pot](* <- lang_en;; *);;
+
+concept_stock_pot<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(кастрюля)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Кастрюля - кухонный предмет для варки.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_stock_pot <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_stock_pot.png";;
+		*);;
+	*);;

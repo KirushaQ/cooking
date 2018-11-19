@@ -1,0 +1,18 @@
+active_action -> concept_brezing;;
+concept_brezing <- concept_chemical_cooking_method;;
+concept_brezing => nrel_main_idtf:
+	[брезирование](* <- lang_ru;; *);
+	[brezing](* <- lang_en;; *);;
+
+concept_brezing<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(брезирование)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Брезирование — метод приготовления пищи, в ходе которого продукты тушат без обжаривания.](*<-lang_ru;;*);;
+*);;
+*);;

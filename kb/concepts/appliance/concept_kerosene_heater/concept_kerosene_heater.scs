@@ -1,0 +1,27 @@
+concept_kerosene_heater <- concept_kitchen_stove;;
+concept_kerosene_heater => nrel_main_idtf:
+	[керосинка](* <- lang_ru;; *);
+	[kerosene heater](* <- lang_en;; *);;
+
+concept_kerosene_heater<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(керосинка)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Кероси́нка — бытовой нагревательный прибор для приготовления и разогревания пищи на открытом огне, работающий на керосине.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_kerosene_heater <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_kerosene_heater.png";;
+		*);;
+	*);;

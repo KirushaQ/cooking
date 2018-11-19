@@ -1,0 +1,28 @@
+active_action -> concept_convection_drying;;
+concept_convection_drying <- concept_chemical_cooking_method;;
+concept_convection_drying => nrel_main_idtf:
+	[воздушная сушка](* <- lang_ru;; *);
+	[convection drying](* <- lang_en;; *);;
+
+concept_convection_drying<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(воздушная сушка)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Воздушная сушка - способ приготовления пищи, при котором продукт высушивается в закрытом пространстве с постоянной циркуляцией воздуха.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_convection_drying <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_convection_drying.png";;
+		*);;
+	*);;

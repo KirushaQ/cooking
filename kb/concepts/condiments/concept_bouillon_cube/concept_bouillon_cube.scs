@@ -1,0 +1,27 @@
+concept_bouillon_cube <- concept_condiment;;
+concept_bouillon_cube => nrel_main_idtf:
+	[бульонный кубик](* <- lang_ru;; *);
+	[bouillon cube](* <- lang_en;; *);;
+
+concept_bouillon_cube<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(Бульонный кубик)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Бульонный кубик — это спрессованный концентрированный и обезвоженный мясной или овощной бульон.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_bouillon_cube <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_bouillon_cube.png";;
+		*);;
+	*);;

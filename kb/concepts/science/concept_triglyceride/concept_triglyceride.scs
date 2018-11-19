@@ -1,0 +1,27 @@
+concept_triglyceride <- concept_organic_compound;;
+concept_triglyceride => nrel_main_idtf:
+	[жир](* <- lang_ru;; *);
+	[triglyceride](* <- lang_en;; *);;
+
+concept_triglyceride<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(жир)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Жир — органические вещество, продукт этерификации карбоновых кислот и трёхатомного спирта глицерина.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_triglyceride <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_triglyceride.png";;
+		*);;
+	*);;

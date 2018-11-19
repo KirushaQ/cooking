@@ -1,0 +1,27 @@
+concept_saturator <- concept_kitchen_stove;;
+concept_saturator => nrel_main_idtf:
+	[сатуратор](* <- lang_ru;; *);
+	[saturator](* <- lang_en;; *);;
+
+concept_saturator<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(сатуратор](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Сатуратор- аппарат, позволяющий под давлением, с помощью насоса, насыщать воду углекислым газом.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_saturator <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_saturator.png";;
+		*);;
+	*);;

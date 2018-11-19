@@ -1,0 +1,27 @@
+concept_cooking <- sc_node_not_relation;;
+concept_cooking => nrel_main_idtf:
+	[кулинария ](* <- lang_ru;; *);
+	[cooking](* <- lang_en;; *);;
+
+concept_cooking<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(кулинария)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Кулинария — человеческая деятельность по приготовлению пищи к еде](*<-lang_ru;;*);;
+*);;
+*);;
+concept_cooking <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_cooking.png";;
+		*);;
+	*);;

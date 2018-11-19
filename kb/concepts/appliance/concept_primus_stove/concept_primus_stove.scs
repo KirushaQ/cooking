@@ -1,0 +1,27 @@
+concept_primus_stove <- concept_kitchen_stove;;
+concept_primus_stove => nrel_main_idtf:
+	[примус](* <- lang_ru;; *);
+	[primus stove](* <- lang_en;; *);;
+
+concept_primus_stove<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(примус)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [При́мус — бесфитильный нагревательный прибор, работающий на жидком топливе (бензине или керосине).](*<-lang_ru;;*);;
+*);;
+*);;
+concept_primus_stove <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_primus_stove.png";;
+		*);;
+	*);;

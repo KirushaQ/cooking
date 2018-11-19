@@ -1,0 +1,28 @@
+concept_cauldron <- concept_cooking_device;;
+concept_cauldron => nrel_main_idtf:
+	[котёл](* <- lang_ru;; *);
+	[cauldrone](* <- lang_en;; *);;
+
+concept_cauldron<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(Котёл)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Котёл — металлический сосуд для приготовления 
+      пищи методом варки на открытом огне.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_cauldron <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_cauldron.png";;
+		*);;
+	*);;

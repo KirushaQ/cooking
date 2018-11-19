@@ -1,0 +1,18 @@
+active_action -> concept_drum_drying;;
+concept_drum_drying <- concept_chemical_cooking_method;;
+concept_drum_drying => nrel_main_idtf:
+	[измельчённая сушка](* <- lang_ru;; *);
+	[drum drying](* <- lang_en;; *);;
+
+concept_drum_drying<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(измельчённая сушка)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Измельчённая сушка - способ приготовления пищи, при котором исходный продукт измельчается и высушивается.](*<-lang_ru;;*);;
+*);;
+*);;

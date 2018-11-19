@@ -1,0 +1,28 @@
+active_action -> concept_tyndalization;;
+concept_tyndalization <- concept_chemical_cooking_method;;
+concept_tyndalization => nrel_main_idtf:
+	[тиндализация](* <- lang_ru;; *);
+	[tyndalization](* <- lang_en;; *);;
+
+concept_tyndalization<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(тиндализация)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Тиндализация — способ стерилизации, предложенный Дж. Тиндалем. Он заключается в дробном нагревании жидкостей (как правило, в течение 1 часа) от трёх до пяти раз с промежутками в 24 ч. За это время споры бактерий, выжившие при 100 °С, прорастают, и вышедшие из них вегетативные клетки бактерий погибают при последующем нагревании.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_tyndalization <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_tyndalization.png";;
+		*);;
+	*);;

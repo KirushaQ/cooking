@@ -1,0 +1,28 @@
+active_action -> concept_tatacki;;
+concept_tatacki <- concept_chemical_cooking_method;;
+concept_tatacki => nrel_main_idtf:
+	[татаки](* <- lang_ru;; *);
+	[tatacki](* <- lang_en;; *);;
+
+concept_tatacki<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(татаки)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Татаки — метод приготовления рыбы или мяса в японской кухне.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_tatacki <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_tatacki.png";;
+		*);;
+	*);;

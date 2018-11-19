@@ -1,0 +1,29 @@
+active_action -> concept_kinpira;;
+concept_kinpira <- concept_chemical_cooking_method;;
+concept_kinpira => nrel_main_idtf:
+	[кимпира](* <- lang_ru;; *);
+	[kinpira](* <- lang_en;; *);;
+concept_kinpira<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(кимпира)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Кимпира — японская техника приготовления еды, заключающаяся в предварительной
+       обжарке ингредиентов на растительном масле и последующем тушении в бульоне 
+       на основе соевого соуса и мирина до полного упаривания жидкости.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_kinpira <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_kinpira.png";;
+		*);;
+	*);;

@@ -1,0 +1,27 @@
+concept_knife <- concept_cutlery_item;;
+concept_knife => nrel_main_idtf:
+	[нож](* <- lang_ru;; *);
+	[knife](* <- lang_en;; *);;
+
+concept_knife<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(нож)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Нож — предмет из столового прибора, используемый для разделения пищи на меньшие части.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_knife <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_knife.png";;
+		*);;
+	*);;

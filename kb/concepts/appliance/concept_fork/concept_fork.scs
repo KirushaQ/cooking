@@ -1,0 +1,27 @@
+concept_fork <- concept_cutlery_item;;
+concept_fork => nrel_main_idtf:
+	[вилка](* <- lang_ru;; *);
+	[fork](* <- lang_en;; *);;
+
+concept_fork<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(вилка)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Ви́лка — предмет из столового прибора, состоящий из рукояти и нескольких узких зубцов (обычно от двух до четырёх) на одном конце.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_fork <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_fork.png";;
+		*);;
+	*);;

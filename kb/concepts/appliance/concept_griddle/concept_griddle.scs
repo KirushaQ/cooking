@@ -1,0 +1,27 @@
+concept_griddle <- concept_kitchen_stove;;
+concept_griddle => nrel_main_idtf:
+	[гридль](* <- lang_ru;; *);
+	[griddle](* <- lang_en;; *);;
+
+concept_griddle<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(гридль)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Гридль — аппарат для приготовления мяса, рыбы и овощей, имеющий толстый сплошной лист железа или чугуна, нагреваемый углями, электричеством или газом.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_griddle <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_griddle.png";;
+		*);;
+	*);;

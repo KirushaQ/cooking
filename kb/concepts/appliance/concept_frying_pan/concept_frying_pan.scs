@@ -1,0 +1,27 @@
+concept_frying_pan <- concept_cutlery_item;;
+concept_frying_pan => nrel_main_idtf:
+	[сковородка](* <- lang_ru;; *);
+	[frying pan](* <- lang_en;; *);;
+
+concept_frying_pan<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(сковородка)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Сковородка - кухонный предмет для жарки .](*<-lang_ru;;*);;
+*);;
+*);;
+concept_frying_pan <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_frying_pan.png";;
+		*);;
+	*);;

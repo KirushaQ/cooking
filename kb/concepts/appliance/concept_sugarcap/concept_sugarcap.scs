@@ -1,0 +1,27 @@
+concept_sugarcap <- concept_cutlery_item;;
+concept_sugarcap => nrel_main_idtf:
+	[столовые щипцы](* <- lang_ru;; *);
+	[sugarcap](* <- lang_en;; *);;
+
+concept_sugarcap<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(столовые щипцы)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Столовые щипцы - прибор для манипуляции пищей путём захвата порционных кусков.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_sugarcap <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_sugarcap.png";;
+		*);;
+	*);;

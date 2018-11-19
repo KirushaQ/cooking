@@ -1,0 +1,27 @@
+concept_kerogaz <- concept_kitchen_stove;;
+concept_kerogaz => nrel_main_idtf:
+	[керогаз](* <- lang_ru;; *);
+	[kerogaz](* <- lang_en;; *);;
+
+concept_kerogaz<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(Керогаз](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Керогаз - прибор работающий на керосине или газу.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_kerogaz <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_kerogaz.png";;
+		*);;
+	*);;

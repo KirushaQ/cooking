@@ -1,0 +1,27 @@
+concept_gas_stove <- concept_kitchen_stove;;
+concept_gas_stove => nrel_main_idtf:
+	[газовая плита](* <- lang_ru;; *);
+	[gas stove](* <- lang_en;; *);;
+
+concept_gas_stove<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(Газовая плита)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Газовая плита — кухонная плита, работающая на природном газе.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_gas_stove <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_gas_stove.png";;
+		*);;
+	*);;

@@ -1,0 +1,27 @@
+concept_carbohydrate <- concept_organic_compound;;
+concept_carbohydrate => nrel_main_idtf:
+	[углевод](* <- lang_ru;; *);
+	[carbohydrate](* <- lang_en;; *);;
+
+concept_carbohydrate<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(Углевод)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Углевод — органическое вещество, содержащие карбонильную группу и несколько гидроксильных групп.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_carbohydrate <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_carbohydrate.png";;
+		*);;
+	*);;

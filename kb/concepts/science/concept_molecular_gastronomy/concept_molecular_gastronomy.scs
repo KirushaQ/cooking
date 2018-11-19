@@ -1,0 +1,16 @@
+concept_molecular_gastronomy => nrel_main_idtf:
+	[молекулярная кухня](* <- lang_ru;; *);
+	[molecular gastronomy](* <- lang_en;; *);;
+
+concept_molecular_gastronomy<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(молекулярная кухня)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Молекулярная кухня  — раздел кулинарии, связанный с изучением физико-химических процессов, которые происходят при приготовлении пищи.](*<-lang_ru;;*);;
+*);;
+*);;

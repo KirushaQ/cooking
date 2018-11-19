@@ -1,0 +1,26 @@
+concept_cutlery_item => nrel_main_idtf:
+	[столовый прибор](* <- lang_ru;; *);
+	[cutlery item](* <- lang_en;; *);;
+
+concept_cutlery_item<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(столовый прибор)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Столовый прибор — инструмент или набор инструментов для манипуляций с пищей.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_cutlery_item <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_cutlery_item.png";;
+		*);;
+	*);;

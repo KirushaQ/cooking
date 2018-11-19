@@ -1,0 +1,27 @@
+concept_electric_stove <- concept_kitchen_stove;;
+concept_electric_stove => nrel_main_idtf:
+	[электрическая плита](* <- lang_ru;; *);
+	[electric stove](* <- lang_en;; *);;
+
+concept_electric_stove<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(Электрическая плита)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Электрическая плита — кухонная плита, работающая на электричестве.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_electric_stove <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_electric_stove.png";;
+		*);;
+	*);;

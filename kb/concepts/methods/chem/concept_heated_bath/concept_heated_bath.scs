@@ -1,0 +1,28 @@
+active_action -> concept_heathed_bath;;
+concept_heathed_bath <- concept_chemical_cooking_method;;
+concept_heathed_bath => nrel_main_idtf:
+	[паровая баня](* <- lang_ru;; *);
+	[heathed bath](* <- lang_en;; *);;
+
+concept_heathed_bath<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(паровая баня)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Водяная баня — устройство для нагревания веществ, когда требуемая температура составляет до 100 °C при нормальном атмосферном давлении..](*<-lang_ru;;*);;
+*);;
+*);;
+concept_heathed_bath <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_heathed_bath.png";;
+		*);;
+	*);;

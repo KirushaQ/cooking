@@ -1,0 +1,28 @@
+active_action -> concept_curing;;
+concept_curing <- concept_chemical_cooking_method;;
+concept_curing => nrel_main_idtf:
+	[присаливание](* <- lang_ru;; *);
+	[curing](* <- lang_en;; *);;
+
+concept_curing<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(присаливание)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+      [Присаливание - способ приготовления пищи, основанный на использовании большого количества соли.](*<-lang_ru;;*);;
+*);;
+*);;
+concept_curing <- rrel_key_sc_element:
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example:
+		"file://images/concept_curing.png";;
+		*);;
+	*);;
