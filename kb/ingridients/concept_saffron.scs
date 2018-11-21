@@ -1,0 +1,64 @@
+sc_node_not_relation -> concept_saffron;;
+
+concept_saffron => nrel_main_idtf:
+[шафран] (* <- lang_ru;; *);
+[saffron] (* <- lang_en;; *);;
+concept_saffron <- concept_ingridient;;
+concept_saffron<- rrel_key_sc_element: ...
+(*
+<-sc_illustration;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example: "file://pictures/saffron.jpg"
+(*
+=> nrel_format: format_jpg;;
+*);;
+*);;
+*);;
+concept_saffron => nrel_type:concept_spice;;
+concept_saffron => nrel_kkal : 310_kkal
+(*
+=> nrel_main_idtf:
+[310 ккал]
+(*
+<- lang_ru;;
+*);;
+<- concept_kkal;;
+*);;
+concept_saffron => nrel_price : 21_rub
+(*
+=> nrel_main_idtf:
+[21 рубль]
+(*
+<- lang_ru;;
+*);;
+<- concept_price;;
+*);;
+concept_saffron => nrel_storage_time: 24_moth
+(*
+=> nrel_main_idtf:
+[24 месяца]
+(*
+<- lang_ru;;
+*);;
+<- concept_time;;
+*);;
+concept_saffron => nrel_storage_conditions: dry_place
+(*
+=> nrel_main_idtf:
+[сухое место]
+(*
+<- lang_ru;;
+*);;
+*);;
+concept_saffron=> nrel_glycemic_index: 5
+
+(*
+=> nrel_main_idtf:
+[5]
+(*
+<- lang_ru;;
+*);;
+<- concept_glycemic_index;;
+*);;

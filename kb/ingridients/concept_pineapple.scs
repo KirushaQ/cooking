@@ -1,0 +1,64 @@
+sc_node_not_relation -> concept_pineapple;;
+
+concept_pineapple => nrel_main_idtf:
+[ананас] (* <- lang_ru;; *);
+[pineapple] (* <- lang_en;; *);;
+concept_pineapple <- concept_ingridient;;
+concept_pineapple<- rrel_key_sc_element: ...
+(*
+<-sc_illustration;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example: "file://pictures/pineapple.jpg"
+(*
+=> nrel_format: format_jpg;;
+*);;
+*);;
+*);;
+concept_pineapple => nrel_type:concept_fruit;;
+concept_pineapple => nrel_kkal : 50_kkal
+(*
+=> nrel_main_idtf:
+[50 ккал]
+(*
+<- lang_ru;;
+*);;
+<- concept_kkal;;
+*);;
+concept_pineapple => nrel_price : 4_rub
+(*
+=> nrel_main_idtf:
+[4 рубль]
+(*
+<- lang_ru;;
+*);;
+<- concept_price;;
+*);;
+concept_pineapple => nrel_storage_time: 1_week
+(*
+=> nrel_main_idtf:
+[1 неделя]
+(*
+<- lang_ru;;
+*);;
+<- concept_time;;
+*);;
+concept_pineapple => nrel_storage_conditions: refrigerator
+(*
+=> nrel_main_idtf:
+[в холодильнике]
+(*
+<- lang_ru;;
+*);;
+*);;
+concept_pineapple=> nrel_glycemic_index: 66
+
+(*
+=> nrel_main_idtf:
+[66]
+(*
+<- lang_ru;;
+*);;
+<- concept_glycemic_index;;
+*);;

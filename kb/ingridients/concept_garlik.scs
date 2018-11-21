@@ -1,0 +1,64 @@
+sc_node_not_relation -> concept_garlik;;
+
+concept_garlik => nrel_main_idtf:
+[чеснок] (* <- lang_ru;; *);
+[garlik] (* <- lang_en;; *);;
+concept_garlik <- concept_ingridient;;
+concept_garlik<- rrel_key_sc_element: ...
+(*
+<-sc_illustration;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example: "file://pictures/garlik.jpg"
+(*
+=> nrel_format: format_jpg;;
+*);;
+*);;
+*);;
+concept_garlik => nrel_type:concept_vegetable;;
+concept_garlik => nrel_kkal : 143_kkal
+(*
+=> nrel_main_idtf:
+[14 ккал]
+(*
+<- lang_ru;;
+*);;
+<- concept_kkal;;
+*);;
+concept_garlik => nrel_price : 3_rub
+(*
+=> nrel_main_idtf:
+[3 рубль]
+(*
+<- lang_ru;;
+*);;
+<- concept_price;;
+*);;
+concept_garlik => nrel_storage_time: 8_moth
+(*
+=> nrel_main_idtf:
+[8 месяцев]
+(*
+<- lang_ru;;
+*);;
+<- concept_time;;
+*);;
+concept_garlik => nrel_storage_conditions: dark_place
+(*
+=> nrel_main_idtf:
+[темное место]
+(*
+<- lang_ru;;
+*);;
+*);;
+concept_garlik=> nrel_glycemic_index: 30
+
+(*
+=> nrel_main_idtf:
+[30]
+(*
+<- lang_ru;;
+*);;
+<- concept_glycemic_index;;
+*);;
