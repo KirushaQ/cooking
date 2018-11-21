@@ -1,0 +1,64 @@
+sc_node_not_relation -> concept_lentils;;
+
+concept_lentils => nrel_main_idtf:
+[чечевица] (* <- lang_ru;; *);
+[lentils] (* <- lang_en;; *);;
+concept_lentils <- concept_ingridient;;
+concept_lentils<- rrel_key_sc_element: ...
+(*
+<-sc_illustration;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example: "file://pictures/lentils.jpg"
+(*
+=> nrel_format: format_jpg;;
+*);;
+*);;
+*);;
+concept_lentils => nrel_type:concept_beans;;
+concept_lentils => nrel_kkal : 116_kkal
+(*
+=> nrel_main_idtf:
+[116 ккал]
+(*
+<- lang_ru;;
+*);;
+<- concept_kkal;;
+*);;
+concept_lentils => nrel_price : 4_rub
+(*
+=> nrel_main_idtf:
+[4 рубль]
+(*
+<- lang_ru;;
+*);;
+<- concept_price;;
+*);;
+concept_lentils => nrel_storage_time: 12_months
+(*
+=> nrel_main_idtf:
+[12 months]
+(*
+<- lang_ru;;
+*);;
+<- concept_time;;
+*);;
+concept_lentils => nrel_storage_conditions: dark_place
+(*
+=> nrel_main_idtf:
+[темное место]
+(*
+<- lang_ru;;
+*);;
+*);;
+concept_lentils=> nrel_glycemic_index: 27
+
+(*
+=> nrel_main_idtf:
+[27]
+(*
+<- lang_ru;;
+*);;
+<- concept_glycemic_index;;
+*);;

@@ -1,0 +1,64 @@
+sc_node_not_relation -> concept_goji_berries;;
+
+concept_goji_berries => nrel_main_idtf:
+[ягоды годжи] (* <- lang_ru;; *);
+[goji_berries] (* <- lang_en;; *);;
+concept_goji_berries <- concept_ingridient;;
+concept_goji_berries<- rrel_key_sc_element: ...
+(*
+<-sc_illustration;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example: "file://pictures/goji_berries.jpg"
+(*
+=> nrel_format: format_jpg;;
+*);;
+*);;
+*);;
+concept_goji_berries => nrel_type:concept_fetus;;
+concept_goji_berries => nrel_kkal : 309_kkal
+(*
+=> nrel_main_idtf:
+[309 ккал]
+(*
+<- lang_ru;;
+*);;
+<- concept_kkal;;
+*);;
+concept_goji_berries => nrel_price : 10_rub
+(*
+=> nrel_main_idtf:
+[10 рубль]
+(*
+<- lang_ru;;
+*);;
+<- concept_price;;
+*);;
+concept_goji_berries => nrel_storage_time: 12_months
+(*
+=> nrel_main_idtf:
+[12 months]
+(*
+<- lang_ru;;
+*);;
+<- concept_time;;
+*);;
+concept_goji_berries => nrel_storage_conditions: dark_place
+(*
+=> nrel_main_idtf:
+[темное место]
+(*
+<- lang_ru;;
+*);;
+*);;
+concept_goji_berries=> nrel_glycemic_index: 29
+
+(*
+=> nrel_main_idtf:
+[29]
+(*
+<- lang_ru;;
+*);;
+<- concept_glycemic_index;;
+*);;

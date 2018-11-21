@@ -1,0 +1,64 @@
+sc_node_not_relation -> concept_sea_kale;;
+
+concept_sea_kale => nrel_main_idtf:
+[морская капуста] (* <- lang_ru;; *);
+[sea_kale] (* <- lang_en;; *);;
+concept_sea_kale <- concept_ingridient;;
+concept_sea_kale<- rrel_key_sc_element: ...
+(*
+<-sc_illustration;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example: "file://pictures/sea_kale.jpg"
+(*
+=> nrel_format: format_jpg;;
+*);;
+*);;
+*);;
+concept_sea_kale => nrel_type:concept_herb;;
+concept_sea_kale => nrel_kkal : 5_kkal
+(*
+=> nrel_main_idtf:
+[5 ккал]
+(*
+<- lang_ru;;
+*);;
+<- concept_kkal;;
+*);;
+concept_sea_kale => nrel_price : 3_rub
+(*
+=> nrel_main_idtf:
+[3 рубль]
+(*
+<- lang_ru;;
+*);;
+<- concept_price;;
+*);;
+concept_sea_kale => nrel_storage_time: 1_months
+(*
+=> nrel_main_idtf:
+[1 месяц]
+(*
+<- lang_ru;;
+*);;
+<- concept_time;;
+*);;
+concept_sea_kale => nrel_storage_conditions: refrigerator
+(*
+=> nrel_main_idtf:
+[холодильник]
+(*
+<- lang_ru;;
+*);;
+*);;
+concept_sea_kale=> nrel_glycemic_index: 22
+
+(*
+=> nrel_main_idtf:
+[22]
+(*
+<- lang_ru;;
+*);;
+<- concept_glycemic_index;;
+*);;

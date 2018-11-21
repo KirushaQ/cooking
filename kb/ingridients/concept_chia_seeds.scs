@@ -1,0 +1,64 @@
+sc_node_not_relation -> concept_chia_seeds;;
+
+concept_chia_seeds => nrel_main_idtf:
+[семена чиа] (* <- lang_ru;; *);
+[chia_seeds] (* <- lang_en;; *);;
+concept_chia_seeds <- concept_ingridient;;
+concept_chia_seeds<- rrel_key_sc_element: ...
+(*
+<-sc_illustration;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example: "file://pictures/chia_seeds.jpg"
+(*
+=> nrel_format: format_jpg;;
+*);;
+*);;
+*);;
+concept_chia_seeds => nrel_type:concept_cereal;;
+concept_chia_seeds => nrel_kkal : 512_kkal
+(*
+=> nrel_main_idtf:
+[512 ккал]
+(*
+<- lang_ru;;
+*);;
+<- concept_kkal;;
+*);;
+concept_chia_seeds => nrel_price : 5_rub
+(*
+=> nrel_main_idtf:
+[5 рубль]
+(*
+<- lang_ru;;
+*);;
+<- concept_price;;
+*);;
+concept_chia_seeds => nrel_storage_time: 5_months
+(*
+=> nrel_main_idtf:
+[5 months]
+(*
+<- lang_ru;;
+*);;
+<- concept_time;;
+*);;
+concept_chia_seeds => nrel_storage_conditions: dark_place
+(*
+=> nrel_main_idtf:
+[темное место]
+(*
+<- lang_ru;;
+*);;
+*);;
+concept_chia_seeds=> nrel_glycemic_index: 30
+
+(*
+=> nrel_main_idtf:
+[30]
+(*
+<- lang_ru;;
+*);;
+<- concept_glycemic_index;;
+*);;
