@@ -35,10 +35,10 @@ concept_flax_seeds => nrel_price : 10_rub
 *);;
 <- concept_price;;
 *);;
-concept_flax_seeds => nrel_storage_time: 6-12_months
+concept_flax_seeds => nrel_storage_time: 12_months
 (*
 => nrel_main_idtf:
-[6-12 months]
+[12 months]
 (*
 <- lang_ru;;
 *);;
