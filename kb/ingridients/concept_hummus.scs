@@ -1,0 +1,64 @@
+sc_node_not_relation -> concept_hummus;;
+
+concept_hummus => nrel_main_idtf:
+[хумус] (* <- lang_ru;; *);
+[hummus] (* <- lang_en;; *);;
+concept_hummus <- concept_ingridient;;
+concept_hummus<- rrel_key_sc_element: ...
+(*
+<-sc_illustration;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example: "file://pictures/hummus.jpg"
+(*
+=> nrel_format: format_jpg;;
+*);;
+*);;
+*);;
+concept_hummus => nrel_type:concept_beans;;
+concept_hummus => nrel_kkal : 116_kkal
+(*
+=> nrel_main_idtf:
+[116 ккал]
+(*
+<- lang_ru;;
+*);;
+<- concept_kkal;;
+*);;
+concept_hummus => nrel_price : 9_rub
+(*
+=> nrel_main_idtf:
+[9 рубль]
+(*
+<- lang_ru;;
+*);;
+<- concept_price;;
+*);;
+concept_hummus => nrel_storage_time: 12_months
+(*
+=> nrel_main_idtf:
+[12 months]
+(*
+<- lang_ru;;
+*);;
+<- concept_time;;
+*);;
+concept_hummus => nrel_storage_conditions: dark_place
+(*
+=> nrel_main_idtf:
+[темное место]
+(*
+<- lang_ru;;
+*);;
+*);;
+concept_hummus=> nrel_glycemic_index: 23
+
+(*
+=> nrel_main_idtf:
+[23]
+(*
+<- lang_ru;;
+*);;
+<- concept_glycemic_index;;
+*);;
