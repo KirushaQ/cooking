@@ -1,0 +1,64 @@
+sc_node_not_relation -> concept_mustard;;
+
+concept_mustard => nrel_main_idtf:
+[горчица] (* <- lang_ru;; *);
+[mustard] (* <- lang_en;; *);;
+concept_mustard <- concept_ingridient;;
+concept_mustard<- rrel_key_sc_element: ...
+(*
+<-sc_illustration;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example: "file://pictures/mustard.jpg"
+(*
+=> nrel_format: format_jpg;;
+*);;
+*);;
+*);;
+concept_mustard => nrel_type:concept_vegetable;;
+concept_mustard => nrel_kkal : 66_kkal
+(*
+=> nrel_main_idtf:
+[66 ккал]
+(*
+<- lang_ru;;
+*);;
+<- concept_kkal;;
+*);;
+concept_mustard => nrel_price : 3_rub
+(*
+=> nrel_main_idtf:
+[3 рубль]
+(*
+<- lang_ru;;
+*);;
+<- concept_price;;
+*);;
+concept_mustard => nrel_storage_time: 7_day
+(*
+=> nrel_main_idtf:
+[7 дней]
+(*
+<- lang_ru;;
+*);;
+<- concept_time;;
+*);;
+concept_mustard => nrel_storage_conditions: refrigerator
+(*
+=> nrel_main_idtf:
+[в холодильнике]
+(*
+<- lang_ru;;
+*);;
+*);;
+concept_mustard=> nrel_glycemic_index: 35
+
+(*
+=> nrel_main_idtf:
+[35]
+(*
+<- lang_ru;;
+*);;
+<- concept_glycemic_index;;
+*);;

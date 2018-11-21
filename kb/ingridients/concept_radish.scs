@@ -1,0 +1,64 @@
+sc_node_not_relation -> concept_radish;;
+
+concept_radish => nrel_main_idtf:
+[редис] (* <- lang_ru;; *);
+[radish] (* <- lang_en;; *);;
+concept_radish <- concept_ingridient;;
+concept_radish<- rrel_key_sc_element: ...
+(*
+<-sc_illustration;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example: "file://pictures/radish.jpg"
+(*
+=> nrel_format: format_jpg;;
+*);;
+*);;
+*);;
+concept_radish => nrel_type:concept_vegetable;;
+concept_radish => nrel_kkal : 19_kkal
+(*
+=> nrel_main_idtf:
+[19 ккал]
+(*
+<- lang_ru;;
+*);;
+<- concept_kkal;;
+*);;
+concept_radish => nrel_price : 2_rub
+(*
+=> nrel_main_idtf:
+[2 рубль]
+(*
+<- lang_ru;;
+*);;
+<- concept_price;;
+*);;
+concept_radish => nrel_storage_time: 1_moth
+(*
+=> nrel_main_idtf:
+[1 месяц]
+(*
+<- lang_ru;;
+*);;
+<- concept_time;;
+*);;
+concept_radish => nrel_storage_conditions: refrigerator
+(*
+=> nrel_main_idtf:
+[в холодильнике]
+(*
+<- lang_ru;;
+*);;
+*);;
+concept_radish=> nrel_glycemic_index: 15
+
+(*
+=> nrel_main_idtf:
+[15]
+(*
+<- lang_ru;;
+*);;
+<- concept_glycemic_index;;
+*);;
