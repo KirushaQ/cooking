@@ -1,0 +1,64 @@
+sc_node_not_relation -> concept_basil;;
+
+concept_basil => nrel_main_idtf:
+[базилик] (* <- lang_ru;; *);
+[basil] (* <- lang_en;; *);;
+concept_basil <- concept_ingridient;;
+concept_basil<- rrel_key_sc_element: ...
+(*
+<-sc_illustration;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example: "file://file://pictures/basil.jpg"
+(*
+=> nrel_format: format_jpg;;
+*);;
+*);;
+*);;
+concept_basil => nrel_type:concept_herb;;
+concept_basil => nrel_kkal : 23_kkal
+(*
+=> nrel_main_idtf:
+[23 ккал]
+(*
+<- lang_ru;;
+*);;
+<- concept_kkal;;
+*);;
+concept_basil => nrel_price : 1_rub
+(*
+=> nrel_main_idtf:
+[1 руб рубль]
+(*
+<- lang_ru;;
+*);;
+<- concept_price;;
+*);;
+concept_basil => nrel_storage_time: 3_month
+(*
+=> nrel_main_idtf:
+[3 месяца]
+(*
+<- lang_ru;;
+*);;
+<- concept_time;;
+*);;
+concept_basil => nrel_storage_conditions: doesn't matter
+(*
+=> nrel_main_idtf:
+[не имеет значения]
+(*
+<- lang_ru;;
+*);;
+*);;
+concept_basil=> nrel_glycemic_index: 5
+
+(*
+=> nrel_main_idtf:
+[5]
+(*
+<- lang_ru;;
+*);;
+<- concept_glycemic_index;;
+*);;

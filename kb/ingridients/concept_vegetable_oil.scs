@@ -1,0 +1,64 @@
+sc_node_not_relation -> concept_vegetable_oil;;
+
+concept_vegetable_oil => nrel_main_idtf:
+[подсолнечное масло] (* <- lang_ru;; *);
+[vegetable_oil] (* <- lang_en;; *);;
+concept_vegetable_oil <- concept_ingridient;;
+concept_vegetable_oil<- rrel_key_sc_element: ...
+(*
+<-sc_illustration;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example: "file://file://pictures/vegetable_oil.jpg"
+(*
+=> nrel_format: format_jpg;;
+*);;
+*);;
+*);;
+concept_vegetable_oil => nrel_type:concept_sauce;;
+concept_vegetable_oil => nrel_kkal : 899_kkal
+(*
+=> nrel_main_idtf:
+[899 ккал]
+(*
+<- lang_ru;;
+*);;
+<- concept_kkal;;
+*);;
+concept_vegetable_oil => nrel_price : 2_rub
+(*
+=> nrel_main_idtf:
+[2 рубль]
+(*
+<- lang_ru;;
+*);;
+<- concept_price;;
+*);;
+concept_vegetable_oil => nrel_storage_time: 4_month
+(*
+=> nrel_main_idtf:
+[4 месяца]
+(*
+<- lang_ru;;
+*);;
+<- concept_time;;
+*);;
+concept_vegetable_oil => nrel_storage_conditions: refrigerator
+(*
+=> nrel_main_idtf:
+[холодильник]
+(*
+<- lang_ru;;
+*);;
+*);;
+concept_vegetable_oil=> nrel_glycemic_index: 0
+
+(*
+=> nrel_main_idtf:
+[0]
+(*
+<- lang_ru;;
+*);;
+<- concept_glycemic_index;;
+*);;
