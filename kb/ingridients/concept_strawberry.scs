@@ -1,0 +1,64 @@
+sc_node_not_relation -> concept_strawberry;;
+
+concept_strawberry => nrel_main_idtf:
+[клубника] (* <- lang_ru;; *);
+[strawberry] (* <- lang_en;; *);;
+concept_strawberry <- concept_ingridient;;
+concept_strawberry<- rrel_key_sc_element: ...
+(*
+<-sc_illustration;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example: "file://file://pictures/strawberry.jpg"
+(*
+=> nrel_format: format_jpg;;
+*);;
+*);;
+*);;
+concept_strawberry => nrel_type:concept_fruit;;
+concept_strawberry => nrel_kkal : 32_kkal
+(*
+=> nrel_main_idtf:
+[32 ккал]
+(*
+<- lang_ru;;
+*);;
+<- concept_kkal;;
+*);;
+concept_strawberry => nrel_price : 3_rub
+(*
+=> nrel_main_idtf:
+[3 рубль]
+(*
+<- lang_ru;;
+*);;
+<- concept_price;;
+*);;
+concept_strawberry => nrel_storage_time: 3_day
+(*
+=> nrel_main_idtf:
+[3 дня]
+(*
+<- lang_ru;;
+*);;
+<- concept_time;;
+*);;
+concept_strawberry => nrel_storage_conditions: refrigerator
+(*
+=> nrel_main_idtf:
+[холодильник]
+(*
+<- lang_ru;;
+*);;
+*);;
+concept_strawberry=> nrel_glycemic_index: 32
+
+(*
+=> nrel_main_idtf:
+[32]
+(*
+<- lang_ru;;
+*);;
+<- concept_glycemic_index;;
+*);;

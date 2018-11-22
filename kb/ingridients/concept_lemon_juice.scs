@@ -1,0 +1,64 @@
+sc_node_not_relation -> concept_lemon_juice;;
+
+concept_lemon_juice => nrel_main_idtf:
+[лимонный сок] (* <- lang_ru;; *);
+[lemon_juice] (* <- lang_en;; *);;
+concept_lemon_juice <- concept_ingridient;;
+concept_lemon_juice<- rrel_key_sc_element: ...
+(*
+<-sc_illustration;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example: "file://file://pictures/lemon_juice.jpg"
+(*
+=> nrel_format: format_jpg;;
+*);;
+*);;
+*);;
+concept_lemon_juice => nrel_type:concept_sauce;;
+concept_lemon_juice => nrel_kkal : 54_kkal
+(*
+=> nrel_main_idtf:
+[54 ккал]
+(*
+<- lang_ru;;
+*);;
+<- concept_kkal;;
+*);;
+concept_lemon_juice => nrel_price : 2_rub
+(*
+=> nrel_main_idtf:
+[2 рубль]
+(*
+<- lang_ru;;
+*);;
+<- concept_price;;
+*);;
+concept_lemon_juice => nrel_storage_time: 3_month
+(*
+=> nrel_main_idtf:
+[3 month]
+(*
+<- lang_ru;;
+*);;
+<- concept_time;;
+*);;
+concept_lemon_juice => nrel_storage_conditions: refrigerator
+(*
+=> nrel_main_idtf:
+[refrigerator]
+(*
+<- lang_ru;;
+*);;
+*);;
+concept_lemon_juice=> nrel_glycemic_index: 40
+
+(*
+=> nrel_main_idtf:
+[40]
+(*
+<- lang_ru;;
+*);;
+<- concept_glycemic_index;;
+*);;

@@ -1,0 +1,64 @@
+sc_node_not_relation -> concept_cilantro;;
+
+concept_cilantro => nrel_main_idtf:
+[кинза] (* <- lang_ru;; *);
+[cilantro] (* <- lang_en;; *);;
+concept_cilantro <- concept_ingridient;;
+concept_cilantro<- rrel_key_sc_element: ...
+(*
+<-sc_illustration;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example: "file://file://pictures/cilantro.jpg"
+(*
+=> nrel_format: format_jpg;;
+*);;
+*);;
+*);;
+concept_cilantro => nrel_type:concept_herb;;
+concept_cilantro => nrel_kkal : 23_kkal
+(*
+=> nrel_main_idtf:
+[23 ккал]
+(*
+<- lang_ru;;
+*);;
+<- concept_kkal;;
+*);;
+concept_cilantro => nrel_price : 4_rub
+(*
+=> nrel_main_idtf:
+[4 рубль]
+(*
+<- lang_ru;;
+*);;
+<- concept_price;;
+*);;
+concept_cilantro => nrel_storage_time: 6_month
+(*
+=> nrel_main_idtf:
+[6 month]
+(*
+<- lang_ru;;
+*);;
+<- concept_time;;
+*);;
+concept_cilantro => nrel_storage_conditions: dry_warm_place
+(*
+=> nrel_main_idtf:
+[dry warm place]
+(*
+<- lang_ru;;
+*);;
+*);;
+concept_cilantro=> nrel_glycemic_index: 32
+
+(*
+=> nrel_main_idtf:
+[32]
+(*
+<- lang_ru;;
+*);;
+<- concept_glycemic_index;;
+*);;
