@@ -1,0 +1,25 @@
+
+sc_node_not_relation -> concept_recept_chicken_fillet;;
+
+concept_recept_chicken_fillet => nrel_main_idtf:
+[куриное филе] (* <- lang_ru;; *);
+[chicken fillet] (* <- lang_en;; *);;
+concept_recept_chicken_fillet <- concept_recept;;
+concept_recept_chicken_fillet<- rrel_key_sc_element: ...
+(*
+<-sc_illustration;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example: "file://pictures/chicken_fillet"
+(*
+=> nrel_format: format_jpg;;
+*);;
+*);;
+*);;
+concept_recept_chicken_fillet => nrel_ingridients: concept_chicken_fillet;;
+concept_recept_chicken_fillet => nrel_ingridients: lemon;;
+concept_recept_chicken_fillet => nrel_ingridients: concept_pepper;;
+concept_recept_chicken_fillet => nrel_ingridients: concept_salt;;
+concept_recept_chicken_fillet => nrel_ingridients: concept_salad;;
+concept_recept_chicken_fillet => nrel_ingridients: concept_vegetable_oil;;

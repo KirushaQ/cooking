@@ -1,0 +1,23 @@
+
+sc_node_not_relation -> concept_recept_rice_porrige;;
+
+concept_recept_rice_porrige => nrel_main_idtf:
+[рисовая каша] (* <- lang_ru;; *);
+[rice porrige] (* <- lang_en;; *);;
+concept_recept_rice_porrige <- concept_recept;;
+concept_recept_rice_porrige<- rrel_key_sc_element: ...
+(*
+<-sc_illustration;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example: "file://pictures/rice_porrige"
+(*
+=> nrel_format: format_jpg;;
+*);;
+*);;
+*);;
+concept_recept_rice_porrige => nrel_ingridients: concept_rice;;
+concept_recept_rice_porrige => nrel_ingridients: concept_milk;;
+concept_recept_rice_porrige => nrel_ingridients: concept_salt;;
+concept_recept_rice_porrige => nrel_ingridients: concept_sugar;;

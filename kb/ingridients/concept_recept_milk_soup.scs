@@ -1,0 +1,23 @@
+
+sc_node_not_relation -> concept_recept_milk_soup;;
+
+concept_recept_milk_soup => nrel_main_idtf:
+[молочный суп] (* <- lang_ru;; *);
+[milk soup] (* <- lang_en;; *);;
+concept_recept_milk_soup <- concept_recept;;
+concept_recept_milk_soup<- rrel_key_sc_element: ...
+(*
+<-sc_illustration;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example: "file://pictures/milk_soup"
+(*
+=> nrel_format: format_jpg;;
+*);;
+*);;
+*);;
+concept_recept_milk_soup => nrel_ingridients: concept_rice;;
+concept_recept_milk_soup => nrel_ingridients: concept_milk;;
+concept_recept_milk_soup => nrel_ingridients: concept_salt;;
+concept_recept_milk_soup => nrel_ingridients: concept_sugar;;

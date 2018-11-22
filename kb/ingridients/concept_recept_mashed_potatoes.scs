@@ -1,0 +1,21 @@
+
+sc_node_not_relation -> concept_recept_mashed_potatoes;;
+
+concept_recept_mashed_potatoes => nrel_main_idtf:
+[картофельное пюре] (* <- lang_ru;; *);
+[mashed potatoes] (* <- lang_en;; *);;
+concept_recept_mashed_potatoes <- concept_recept;;
+concept_recept_mashed_potatoes<- rrel_key_sc_element: ...
+(*
+<-sc_illustration;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example: "file://pictures/mashed_potatoes"
+(*
+=> nrel_format: format_jpg;;
+*);;
+*);;
+*);;
+concept_recept_mashed_potatoes => nrel_ingridients: concept_potato;;
+concept_recept_mashed_potatoes => nrel_ingridients: concept_milk;;

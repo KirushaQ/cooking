@@ -1,0 +1,27 @@
+
+sc_node_not_relation -> concept_recept_cabbage_soup;;
+
+concept_recept_cabbage_soup => nrel_main_idtf:
+[щи] (* <- lang_ru;; *);
+[cabbage soup] (* <- lang_en;; *);;
+concept_recept_cabbage_soup <- concept_recept;;
+concept_recept_cabbage_soup<- rrel_key_sc_element: ...
+(*
+<-sc_illustration;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example: "file://pictures/cabbage_soup"
+(*
+=> nrel_format: format_jpg;;
+*);;
+*);;
+*);;
+concept_recept_cabbage_soup => nrel_ingridients: concept_cabbage;;
+concept_recept_cabbage_soup => nrel_ingridients: concept_potato;;
+concept_recept_cabbage_soup => nrel_ingridients: concept_vegetable_oil;;
+concept_recept_cabbage_soup => nrel_ingridients: concept_onion;;
+concept_recept_cabbage_soup => nrel_ingridients: tomato;;
+concept_recept_cabbage_soup => nrel_ingridients: concept_carrot;;
+concept_recept_cabbage_soup => nrel_ingridients: concept_garlik;;
+concept_recept_cabbage_soup => nrel_ingridients: concept_pepper;;

@@ -1,0 +1,22 @@
+
+sc_node_not_relation -> concept_recept_scrambled_eggs;;
+
+concept_recept_scrambled_eggs => nrel_main_idtf:
+[яичница] (* <- lang_ru;; *);
+[scrambled eggs] (* <- lang_en;; *);;
+concept_recept_scrambled_eggs <- concept_recept;;
+concept_recept_scrambled_eggs<- rrel_key_sc_element: ...
+(*
+<-sc_illustration;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example: "file://pictures/scrambled_eggs"
+(*
+=> nrel_format: format_jpg;;
+*);;
+*);;
+*);;
+concept_recept_scrambled_eggs => nrel_ingridients: concept_egg;;
+concept_recept_scrambled_eggs => nrel_ingridients: concept_salt;;
+concept_recept_scrambled_eggs => nrel_ingridients: concept_fennel;;

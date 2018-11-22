@@ -1,0 +1,26 @@
+
+sc_node_not_relation -> concept_recept_braised_cabbage;;
+
+concept_recept_braised_cabbage => nrel_main_idtf:
+[тушеная капуста] (* <- lang_ru;; *);
+[braised cabbage] (* <- lang_en;; *);;
+concept_recept_braised_cabbage <- concept_recept;;
+concept_recept_braised_cabbage<- rrel_key_sc_element: ...
+(*
+<-sc_illustration;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example: "file://pictures/braised_cabbage"
+(*
+=> nrel_format: format_jpg;;
+*);;
+*);;
+*);;
+concept_recept_braised_cabbage => nrel_ingridients: concept_cabbage;;
+concept_recept_braised_cabbage => nrel_ingridients: concept_vegetable_oil;;
+concept_recept_braised_cabbage => nrel_ingridients: concept_salt;;
+concept_recept_braised_cabbage => nrel_ingridients: concept_carrot;;
+concept_recept_braised_cabbage => nrel_ingridients: concept_pepper;;
+concept_recept_braised_cabbage => nrel_ingridients: concept_onion;;
+concept_recept_braised_cabbage => nrel_ingridients: concept_ketchup;;
